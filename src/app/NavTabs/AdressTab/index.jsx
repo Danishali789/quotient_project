@@ -1,7 +1,10 @@
 import React from 'react'
 
 export default function AddressTab() {
+  
   return (
-    <div>AddressTab</div>
+    <div>
+      check adress tab
+    </div>
   )
 }
