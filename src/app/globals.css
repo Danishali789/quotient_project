@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-lg: 1440px;
+  --breakpoint-sm: 834px;
+  --breakpoint-xs: 768px;
+  --breakpoint-xxs: 426px;
+
+
+  --color-green-100: #22C55E;
+   --color-primary-black: #0E253C;
+  --color-red-100: #22C55E;
+  --color-blue-100: #513CCE;
+  --color-light-gray: #F6F8F9;
+  --color-gray-100: #0E253C1A;
+  --color-white: #FFFFFF;
+  --color-white-20: #FFFFFF21;
+   --color-navy-blue: #001121;
+    --color-dark-blue: #010D19;
+}
+@layer components {
+   .text-semibold-22 {
+    @apply text-[22px] font-semibold leading-[20px];
+  }
+  .text-semibold-16 {
+    @apply text-[16px] font-semibold leading-[20px];
+  }
+  .text-medium-12 {
+    @apply text-[12px] font-medium leading-[20px];
+  }
+   .text-regular-14 {
+    @apply text-[14px] font-normal leading-[22px];
+  }
+   .text-regular-11 {
+    @apply text-[11px] font-normal leading-[22px];
+  }
+  .text-regular-12 {
+    @apply text-[12px] font-normal leading-[18px];
+  }
+
+}
+
+.container{
+  @apply bg-light-gray dark:bg-navy-blue p-4 min-w-full max-w-full;
+}
+.card{
+  @apply p-4 border border-gray-200 dark:border-white-20 rounded-2xl bg-white dark:bg-dark-blue shadow-sm;
+}
+.chart-container svg text {
+  @apply dark:text-white;
+  font-size: 10px;
+  fill: #ffffff; 
+  font-weight: bold;
+  color: #ffffff;
+}
+svg .MuiChartsAxis-tickLabel{
+  @apply dark:!fill-white;
+}
+
+
