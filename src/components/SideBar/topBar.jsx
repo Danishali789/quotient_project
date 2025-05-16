@@ -62,8 +62,8 @@ const AccountDetails = () => {
       <div className="grid grid-cols-2 gap-6 mb-4">
         {accountData.map((item, index) => (
           <div key={index}>
-            <p className="text-gray-500 dark:text-white uppercase">{item.label}</p>
-            <p className="text-regular-14 dark:text-white">{item.value}</p>
+            <p className="text-gray-500 dark:text-white break-words uppercase">{item.label}</p>
+            <p className="text-regular-14 dark:text-white break-words">{item.value}</p>
           </div>
         ))}
       </div>
@@ -74,7 +74,7 @@ const AccountDetails = () => {
             Phone Number <span className="text-blue-600 dark:text-white text-xl">+</span>
           </p>
           {phoneNumbers.map((num, i) => (
-            <p className="text-regular-14 dark:text-white" key={i}>{num}</p>
+            <p className="text-regular-14 dark:text-white break-words" key={i}>{num}</p>
           ))}
         </div>
         <div>
@@ -82,7 +82,7 @@ const AccountDetails = () => {
             Email <span className="text-blue-600 dark:text-white text-xl">+</span>
           </p>
           {emails.map((email, i) => (
-            <p className="text-regular-14 dark:text-white" key={i}>{email}</p>
+            <p className="text-regular-14 dark:text-white break-words" key={i}>{email}</p>
           ))}
         </div>
       </div>
@@ -92,7 +92,7 @@ const AccountDetails = () => {
         {companyInfo.map((item, index) => (
           <div key={index}>
             <p className="text-gray-500 dark:text-white uppercase">{item.label}</p>
-            <p className="text-regular-14 dark:text-white">{item.value}</p>
+            <p className="text-regular-14 dark:text-white break-words">{item.value}</p>
           </div>
         ))}
       </div>
@@ -102,7 +102,7 @@ const AccountDetails = () => {
         {otherInfo.map((item, index) => (
           <div key={index}>
             <p className="text-gray-500  dark:text-white uppercase">{item.label}</p>
-            <p className="text-regular-14 dark:text-white">{item.value}</p>
+            <p className="text-regular-14 dark:text-white break-words">{item.value}</p>
           </div>
         ))}
       </div>
@@ -114,7 +114,7 @@ const AccountDetails = () => {
             <p className="text-gray-500 dark:text-white uppercase flex items-center justify-between">
               {item.label} <span className="text-blue-600 dark:text-white text-xl">{item.icon}</span>
             </p>
-            <p className="text-regular-14 dark:text-white">{item.value}</p>
+            <p className="text-regular-14 dark:text-white break-words">{item.value}</p>
           </div>
         ))}
       </div>
