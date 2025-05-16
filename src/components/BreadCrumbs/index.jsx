@@ -8,7 +8,7 @@ export default function Breadcrumb({ paths = [] }) {
   if (!paths.length) return null;
 
   return (
-    <nav className=" flex justify-between w-full px-4 py-4 border-b border-gray-200 dark:border-white-20 bg-white-20 dark:bg-dark-blue" aria-label="Breadcrumb">
+    <nav className=" flex justify-between xxs:flex-row flex-col gap-3 w-full px-4 py-4 border-b border-gray-200 dark:border-white-20 bg-white-20 dark:bg-dark-blue" aria-label="Breadcrumb">
       <ol className="flex items-center space-x-1 text-sm text-gray-600">
         {paths.map((item, index) => {
           const isLast = index === paths.length - 1;
